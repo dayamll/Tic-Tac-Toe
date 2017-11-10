@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(220, 243, 157, 0.705);
+  text-align: center;
+}
+.size {
+  padding: 20px;
+  margin: 10px;
+  font-size: 50px;
+}
+
+.board {
+  margin: 100px auto;
+  border-collapse: collapse;
+  /*no tenga borde la tabla*/
+  font-family: Arial, Helvetica;
+  font-size: 91px;
+}
+
+.board td {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*colocar los bordes a las columnas excepto a la ultima*/
+
+.row:not(:last-child) {
+  border-bottom: 2px solid black;
+}
+
+.row .cell:not(:last-child) {
+  border-right: 2px solid black;
+}
+
+.board td:hover {
+  background-color: rgba(94, 221, 243, 0.712);
+}
+
+.btn {
+  background-color: rgba(94, 221, 243, 0.712);
+  color: rgba(7, 5, 26, 0.712);
+  border: none;
+  padding: 14px;
+  font-size: 28px;
+}
+
+.btn:hover {
+  background-color: transparent;
+}
